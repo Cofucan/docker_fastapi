@@ -25,15 +25,3 @@ async def show_all():
     tasks = await Tasks.all()
     return tasks
 
-
-# @app.put("/", response_model=TaskMain)
-# async def show_all():
-#     task = await Tasks.update()
-#     return task
-
-
-
-# @app.post("/tasks")
-# async def create_task(task: TasksIn_Pydantic):
-#     new_task = await Tasks.create(**task.dict())
-#     return new_task
